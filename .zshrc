@@ -21,6 +21,10 @@ alias gl='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %
 
 alias be='bundle exec'
 
+# PG aliases
+
+alias pgdb='pg_ctl -D /usr/local/var/postgres start'
+
 # Turn on Git autocomplete.
 
 brew_prefix=`brew --prefix`
@@ -31,3 +35,7 @@ fi
 # Disable cowsay in Ansible.
 
 export ANSIBLE_NOCOWS=1
+
+# Change PATH
+
+export PATH="$(yarn global bin):$PATH"
