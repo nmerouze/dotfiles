@@ -38,4 +38,4 @@ export ANSIBLE_NOCOWS=1
 
 # Change PATH
 
-export PATH="$(yarn global bin):$PATH"
+export PATH="$(yarn global bin):$HOME/.cargo/bin:$PATH"
